@@ -23,5 +23,7 @@ namespace test111binimoy.Models
               .Remove<ManyToManyCascadeDeleteConvention>();
         }
         public DbSet<Users> Users { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
+
     }
 }

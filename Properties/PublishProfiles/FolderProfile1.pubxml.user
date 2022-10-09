@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>C:\Users\Century\Desktop\Asp deploy\asp4.5 binimoy final deploy</_PublishTargetUrl>
-    <History>True|2022-10-07T16:09:03.4408755Z;True|2022-10-07T18:29:42.5166326+06:00;</History>
+    <History>True|2022-10-09T15:05:53.3208829Z;True|2022-10-07T22:09:03.4408755+06:00;True|2022-10-07T18:29:42.5166326+06:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="App_Code/TestDbIntialization.cs">
@@ -180,13 +180,19 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>06/27/2016 21:50:24</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
-      <publishTime>11/28/2018 13:00:36</publishTime>
+      <publishTime>05/28/2022 05:41:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.Cors.dll">
+      <publishTime>05/28/2022 05:41:44</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
       <publishTime>11/28/2018 13:04:24</publishTime>
     </File>
+    <File Include="bin/System.Web.Http.Cors.dll">
+      <publishTime>05/28/2022 05:42:16</publishTime>
+    </File>
     <File Include="bin/System.Web.Http.dll">
-      <publishTime>11/28/2018 13:01:00</publishTime>
+      <publishTime>05/28/2022 05:41:46</publishTime>
     </File>
     <File Include="bin/System.Web.Http.WebHost.dll">
       <publishTime>11/28/2018 13:02:56</publishTime>
@@ -210,10 +216,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/28/2018 13:04:24</publishTime>
     </File>
     <File Include="bin/test111binimoy.dll">
-      <publishTime>10/07/2022 22:09:01</publishTime>
+      <publishTime>10/09/2022 21:05:51</publishTime>
     </File>
     <File Include="bin/test111binimoy.pdb">
-      <publishTime>10/07/2022 22:09:01</publishTime>
+      <publishTime>10/09/2022 21:05:51</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>01/23/2014 13:57:34</publishTime>
@@ -293,6 +299,21 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Scripts/modernizr-2.8.3.js">
       <publishTime>10/07/2022 00:30:53</publishTime>
     </File>
+    <File Include="Views/Blogs/Create.cshtml">
+      <publishTime>10/09/2022 20:34:27</publishTime>
+    </File>
+    <File Include="Views/Blogs/Delete.cshtml">
+      <publishTime>10/09/2022 20:34:29</publishTime>
+    </File>
+    <File Include="Views/Blogs/Details.cshtml">
+      <publishTime>10/09/2022 20:34:31</publishTime>
+    </File>
+    <File Include="Views/Blogs/Edit.cshtml">
+      <publishTime>10/09/2022 20:34:32</publishTime>
+    </File>
+    <File Include="Views/Blogs/Index.cshtml">
+      <publishTime>10/09/2022 20:34:34</publishTime>
+    </File>
     <File Include="Views/Home/Index.cshtml">
       <publishTime>10/07/2022 22:05:14</publishTime>
     </File>
@@ -300,7 +321,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/07/2022 00:30:15</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>10/07/2022 22:05:39</publishTime>
+      <publishTime>10/09/2022 20:35:38</publishTime>
     </File>
     <File Include="Views/UserEdit/Create.cshtml">
       <publishTime>10/07/2022 22:01:42</publishTime>
@@ -324,7 +345,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/07/2022 00:30:15</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>10/07/2022 18:29:38</publishTime>
+      <publishTime>10/09/2022 21:05:52</publishTime>
     </File>
   </ItemGroup>
 </Project>

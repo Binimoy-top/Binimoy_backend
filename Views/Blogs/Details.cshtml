@@ -1,0 +1,50 @@
+﻿@model test111binimoy.Models.Blog
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Blog</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BlogsName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BlogsName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Blogcategory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Blogcategory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FullBlog)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FullBlog)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

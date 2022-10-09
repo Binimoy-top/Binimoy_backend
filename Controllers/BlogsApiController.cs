@@ -13,48 +13,45 @@ using test111binimoy.Models;
 
 namespace test111binimoy.Controllers
 {
-    //[EnableCors(origins: "https://binimoy-top.github.io/Binimoy2", headers: "*", methods: "*")]
-    [EnableCors(origins: "http://localhost:4200", headers: "*", methods: "*")]
-
-
-    public class UsersController : ApiController
+    [EnableCors(origins: "http://localhost:4200,http://localhost:56121,https://binimoy-top.github.io/Binimoy2", headers: "*", methods: "*")]
+    public class BlogsApiController : ApiController
     {
         private TestDbContext db = new TestDbContext();
 
-        // GET: api/Users
-        public IQueryable<Users> GetUsers()
+        // GET: api/BlogsApi
+        public IQueryable<Blog> GetBlogs()
         {
-            return db.Users;
+            return db.Blogs;
         }
 
-        // GET: api/Users/5
-        [ResponseType(typeof(Users))]
-        public IHttpActionResult GetUsers(int id)
+        // GET: api/BlogsApi/5
+        [ResponseType(typeof(Blog))]
+        public IHttpActionResult GetBlog(int id)
         {
-            Users users = db.Users.Find(id);
-            if (users == null)
+            Blog blog = db.Blogs.Find(id);
+            if (blog == null)
             {
                 return NotFound();
             }
 
-            return Ok(users);
+            return Ok(blog);
         }
 
-        // PUT: api/Users/5
+        // PUT: api/BlogsApi/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult PutUsers(int id, Users users)
+        public IHttpActionResult PutBlog(int id, Blog blog)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != users.Id)
+            if (id != blog.Id)
             {
                 return BadRequest();
             }
 
-            db.Entry(users).State = EntityState.Modified;
+            db.Entry(blog).State = EntityState.Modified;
 
             try
             {
@@ -62,7 +59,7 @@ namespace test111binimoy.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!UsersExists(id))
+                if (!BlogExists(id))
                 {
                     return NotFound();
                 }
@@ -75,35 +72,35 @@ namespace test111binimoy.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // POST: api/Users
-        [ResponseType(typeof(Users))]
-        public IHttpActionResult PostUsers(Users users)
+        // POST: api/BlogsApi
+        [ResponseType(typeof(Blog))]
+        public IHttpActionResult PostBlog(Blog blog)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            db.Users.Add(users);
+            db.Blogs.Add(blog);
             db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = users.Id }, users);
+            return CreatedAtRoute("DefaultApi", new { id = blog.Id }, blog);
         }
 
-        // DELETE: api/Users/5
-        [ResponseType(typeof(Users))]
-        public IHttpActionResult DeleteUsers(int id)
+        // DELETE: api/BlogsApi/5
+        [ResponseType(typeof(Blog))]
+        public IHttpActionResult DeleteBlog(int id)
         {
-            Users users = db.Users.Find(id);
-            if (users == null)
+            Blog blog = db.Blogs.Find(id);
+            if (blog == null)
             {
                 return NotFound();
             }
 
-            db.Users.Remove(users);
+            db.Blogs.Remove(blog);
             db.SaveChanges();
 
-            return Ok(users);
+            return Ok(blog);
         }
 
         protected override void Dispose(bool disposing)
@@ -115,9 +112,9 @@ namespace test111binimoy.Controllers
             base.Dispose(disposing);
         }
 
-        private bool UsersExists(int id)
+        private bool BlogExists(int id)
         {
-            return db.Users.Count(e => e.Id == id) > 0;
+            return db.Blogs.Count(e => e.Id == id) > 0;
         }
     }
 }
