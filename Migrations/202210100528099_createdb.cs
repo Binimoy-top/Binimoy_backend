@@ -1,12 +1,24 @@
-﻿namespace test111binimoy.Migrations
+namespace test111binimoy.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class crdb : DbMigration
+    public partial class createdb : DbMigration
     {
         public override void Up()
         {
+            CreateTable(
+                "dbo.Blogs",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        BlogsName = c.String(),
+                        Blogcategory = c.String(),
+                        date = c.String(),
+                        FullBlog = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
             CreateTable(
                 "dbo.Users",
                 c => new
@@ -23,6 +35,7 @@
         public override void Down()
         {
             DropTable("dbo.Users");
+            DropTable("dbo.Blogs");
         }
     }
 }

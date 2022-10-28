@@ -4,8 +4,8 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Users\Century\Desktop\Asp deploy\asp4.5 binimoy final deploy</_PublishTargetUrl>
-    <History>True|2022-10-09T17:14:23.5260080Z;True|2022-10-09T21:05:53.3208829+06:00;True|2022-10-07T22:09:03.4408755+06:00;True|2022-10-07T18:29:42.5166326+06:00;</History>
+    <_PublishTargetUrl>C:\Users\Century\Desktop\Asp deploy\10oct</_PublishTargetUrl>
+    <History>True|2022-10-10T06:16:59.7412664Z;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="App_Code/TestDbIntialization.cs">
@@ -216,10 +216,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/28/2018 13:04:24</publishTime>
     </File>
     <File Include="bin/test111binimoy.dll">
-      <publishTime>10/09/2022 23:14:20</publishTime>
+      <publishTime>10/10/2022 12:16:50</publishTime>
     </File>
     <File Include="bin/test111binimoy.pdb">
-      <publishTime>10/09/2022 23:14:20</publishTime>
+      <publishTime>10/10/2022 12:16:50</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>01/23/2014 13:57:34</publishTime>
@@ -345,7 +345,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/07/2022 00:30:15</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>10/09/2022 21:05:52</publishTime>
+      <publishTime>10/10/2022 12:16:52</publishTime>
     </File>
   </ItemGroup>
 </Project>

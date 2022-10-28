@@ -13,8 +13,8 @@ using test111binimoy.Models;
 
 namespace test111binimoy.Controllers
 {
-    //[EnableCors(origins: "https://binimoy-top.github.io/Binimoy2", headers: "*", methods: "*")]
-    [EnableCors(origins: "http://localhost:4200", headers: "*", methods: "*")]
+    [EnableCors(origins: "https://binimoy-top.github.io", headers: "*", methods: "*")]
+    //[EnableCors(origins: "http://localhost:4200", headers: "*", methods: "*")]
 
 
     public class UsersController : ApiController
@@ -27,7 +27,7 @@ namespace test111binimoy.Controllers
             return db.Users;
         }
 
-        // GET: api/Users/5
+        //GET: api/Users/5
         [ResponseType(typeof(Users))]
         public IHttpActionResult GetUsers(int id)
         {
@@ -39,6 +39,24 @@ namespace test111binimoy.Controllers
 
             return Ok(users);
         }
+
+
+        //[ResponseType(typeof(Users))]
+        //public IHttpActionResult GetUsers(int id)
+        //{
+        //    Users users = db.Users.Find(id);
+        //    if (users == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    jwtWithusersInfo vvv = new jwtWithusersInfo();
+        //    vvv.token = "asdasd";
+        //    vvv.Users = users;
+
+        //    return Ok(vvv);
+        //}
+
+
 
         // PUT: api/Users/5
         [ResponseType(typeof(void))]
@@ -89,6 +107,8 @@ namespace test111binimoy.Controllers
 
             return CreatedAtRoute("DefaultApi", new { id = users.Id }, users);
         }
+
+       
 
         // DELETE: api/Users/5
         [ResponseType(typeof(Users))]
